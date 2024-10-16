@@ -8,8 +8,6 @@ soong_namespace {
         "hardware/google/interfaces",
         "hardware/google/pixel",
         "hardware/xiaomi",
-        "vendor/qcom/common/system/av",
-        "vendor/google/pixel",
         "hardware/qcom-caf/sm8150",
 	"hardware/qcom-caf/sm8250",
         "vendor/qcom/opensource/commonsys/display",
@@ -5024,7 +5022,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/camera.qcom.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libcdsprpc", "libqdMetaData", "libsnsapi", "libqmi_common_so", "libqmi_cci", "libqmi_encdec", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libhardware", "libcamera_metadata", "libcamxfdengine", "libcamxstatscore", "libsync", "libmegface", "libMegviiFacepp-0.5.2", "libz", "libdl", "libc", "libm", ],
+			shared_libs: ["libc++", "libcutils", "liblog", "libcdsprpc", "libqdMetaData", "libsnsapi", "libqmi_common_so", "libqmi_cci", "libqmi_encdec", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libhardware", "libcamera_metadata", "libcamxfdengine", "libcamxstatscore", "libsync", "libshim_megvii", "libshim_megvii", "libz", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
