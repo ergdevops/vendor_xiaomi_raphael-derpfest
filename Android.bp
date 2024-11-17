@@ -1279,11 +1279,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/hw/com.qti.chi.override.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libcamera_metadata", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "libsync", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libgrallocutils", "libmialgo_fs", "libmialgo_utils", "libion", "libmialgo_rfs", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "liblog", "libcamera_metadata", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "libsync", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libmialgo_fs", "libmialgo_utils", "libion", "libmialgo_rfs", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/com.qti.chi.override.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libcamera_metadata", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "libsync", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libgrallocutils", "libmialgo_fs", "libmialgo_utils", "libion", "libmialgo_rfs", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "liblog", "libcamera_metadata", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "libsync", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libmialgo_fs", "libmialgo_utils", "libion", "libmialgo_rfs", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -7638,7 +7638,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmialgoengine.so"],
-			shared_libs: ["libarcsoft_high_dynamic_range", "libarcsoft_low_light_hdr", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libGLESv2", "libgrallocutils", "libmpbase", "libarcsoft_beautyshot", "libarcsoft_dualcam_refocus", "libarcsoft_portrait_lighting", "libarcsoft_portrait_lighting_c", "libarcsoft_distortion_correction", "libarcsoft_bodyslim", "libalhLDC", "libalAILDC", "libalCFR", "libmibokeh_855", "libHalSuperSensorServer", "libSuperSensor", "libSuperSensorCPU", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libarcsoft_high_dynamic_range", "libarcsoft_low_light_hdr", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libGLESv2", "libmpbase", "libarcsoft_beautyshot", "libarcsoft_dualcam_refocus", "libarcsoft_portrait_lighting", "libarcsoft_portrait_lighting_c", "libarcsoft_distortion_correction", "libarcsoft_bodyslim", "libalhLDC", "libalAILDC", "libalCFR", "libmibokeh_855", "libHalSuperSensorServer", "libSuperSensor", "libSuperSensorCPU", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
