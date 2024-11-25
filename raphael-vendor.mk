@@ -351,6 +351,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/a640_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_zap.b02 \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/a640_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_zap.elf \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/a640_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_zap.mdt \
+    vendor/xiaomi/raphael/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
+    vendor/xiaomi/raphael/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
+    vendor/xiaomi/raphael/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
@@ -419,6 +422,15 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-external \
+    android.hardware.camera.provider@2.4-legacy \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    camera.device@3.3-impl \
+    camera.device@3.4-external-impl \
+    camera.device@3.4-impl \
+    camera.device@3.5-external-impl \
+    camera.device@3.5-impl \
+    camera.device@3.6-external-impl \
     com.qti.sensor.imx586_raphael \
     com.qti.sensor.ov8856_raphael \
     com.qti.sensor.s5k3l6_raphael \
@@ -465,6 +477,7 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
@@ -500,6 +513,7 @@ PRODUCT_PACKAGES += \
     libOmxVpp \
     libOmxWmaDec \
     libOpenCL \
+    libOpenCL_adreno \
     libQSEEComAPI \
     libSuperSensor \
     libSuperSensorCPU \
@@ -547,6 +561,7 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdisp-aba \
     libdisplayqos \
+    libdmabufheapsystem \
     libdpmqmihal \
     libdpps \
     libdsi_netctrl \
@@ -565,12 +580,15 @@ PRODUCT_PACKAGES += \
     libgsl \
     libgui_vendor \
     libidl \
+    libkcl \
+    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
+    libllvm-qgl \
     libloc_core \
     liblocation_api \
     libmdmdetect \
@@ -657,6 +675,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.audiohalext@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.camera.device@1.0_system_ext \
+    vendor.qti.hardware.camera.device@2.0 \
+    vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.vpp@1.1 \
@@ -1098,10 +1119,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
-    libimsmedia_jni_libimsmedia_jni_symlink64 \
-    libEGL_adreno_libEGL_adreno_symlink32 \
-    libGLESv2_adreno_libGLESv2_adreno_symlink32 \
-    libq3dtools_adreno_libq3dtools_adreno_symlink32 \
-    libEGL_adreno_libEGL_adreno_symlink64 \
-    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
-    libq3dtools_adreno_libq3dtools_adreno_symlink64
+    libimsmedia_jni_libimsmedia_jni_symlink64
